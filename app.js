@@ -23,6 +23,6 @@ signUpForm.addEventListener('submit', async (e) => {
 signInForm.addEventListener('submit', async (e)=> {
     e.preventDefault();
     await signInUser(signInEmail.value, signInPassword.value);
-    checkAuth();
     redirectIfLoggedIn();
 });
+
